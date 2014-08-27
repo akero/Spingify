@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qwerty"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="#FFD5FDFA"
+    android:orientation="vertical"
+    tools:context=".Login" >
+<EditText
+    android:id="@+id/username"
+    android:hint="username"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    />
+<EditText
+    android:id="@+id/pass"
+    android:hint="password"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:inputType="textPassword"
+    />
+<Button
+        
+        android:id="@+id/submitbutton"
+        android:background="#818b9dc3"
+        android:textColor="#FF000000"
+     	android:layout_height="50dp"
+     	android:layout_width="100dp"
+     	android:text="Login"
+     	 />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+<!-- <TextView 
+    	android:id="@+id/forgotpass" 
+    	android:layout_height="20dp"
+     	android:layout_width="wrap_content"
+     	
+     	android:clickable="true"
+     	android:text="@string/forgo" 
+         /> -->
+</LinearLayout>
+   <!-- <Button
+        
+        android:id="@+id/forgotpass"
+        android:textColor="#FF000000"
+     	android:layout_height="20dp"
+     	android:layout_width="40dp"
+     	android:text="forgot your password?"
+     	 />
+-->
+</LinearLayout>

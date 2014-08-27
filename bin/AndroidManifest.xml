@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Yaaic - Yet Another Android IRC Client
+
+Copyright 2009-2013 Sebastian Kaspari
+
+This file is part of Yaaic.
+
+Yaaic is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Yaaic is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akero.spingify"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:icon="@drawable/spingify_icon"
+        android:label="Spingify"
+        android:theme="@style/Theme.Yaaic"
+        android:allowBackup="true">
+        <activity
+            android:name="org.yaaic.MainActivity"
+            android:label="Spingify"
+            android:launchMode="standard" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="org.keyconsultant.parse.logintutorial.LoginActivity" 
+        			android:label="Spingify" 
+        			android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+
+         <activity 
+            android:name="org.keyconsultant.parse.logintutorial.MainActivity1" 
+    		android:label="Spingify"> 
+    		</activity>
+    		//
+    		
+<activity android:name="com.zohaibbrohi.loginusingparsesdk.Login" android:label="Spingify">
+
+</activity>
+
+<activity android:name="com.zohaibbrohi.loginusingparsesdk.SignUp" android:screenOrientation="portrait"
+    
+            android:label="Sign up"/>
+
+<activity android:name="com.zohaibbrohi.loginusingparsesdk.MainActivity2" android:screenOrientation="portrait"/>
+
+<activity android:name="com.zohaibbrohi.loginusingparsesdk.Login2" android:screenOrientation="portrait"
+    
+            android:label="@string/app_name"
+    />
+
+<activity android:name="org.yaaic.ForgetParsePassword" android:screenOrientation="portrait" android:noHistory="true"/>
+    		//
+        <activity
+            android:name="org.yaaic.Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+         <activity
+            android:name="org.yaaic.activity.ServersActivity"
+            android:label="Spingify"
+            android:launchMode="standard" >
+            
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.AddServerActivity"
+            android:label="@string/add_server_label" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="irc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.ConversationActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.AboutActivity"
+            android:label="@string/about_label"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.SettingsActivity"
+            android:label="@string/settings_label" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.JoinActivity"
+            android:label="@string/join_label"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.UsersActivity"
+            android:label="@string/users"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.AddAliasActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.AddChannelActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.AddCommandsActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.MessageActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.UserActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="org.yaaic.activity.AuthenticationActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <service android:name="org.yaaic.irc.IRCService" >
+        </service>
+    </application>
+
+</manifest>
